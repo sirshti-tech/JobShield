@@ -85,16 +85,25 @@ Open the local URL displayed in your terminal.
 ## 📁 Project Structure
 
 ```text
+
 JobShield/
 ├── app.py
 ├── README.md
+├── requirements.txt
+├── .gitignore
+├── models/
+│   ├── jobshield_model.pkl
+│   ├── tfidf_vectorizer.pkl
+│   └── threshold.pkl
 ├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   └── models/
-│       ├── jobshield_model.pkl
-│       ├── tfidf_vectorizer.pkl
-│       └── threshold.pkl
-└── requirements.txt
+│   └── 01_data_exploration.ipynb
+└── src/
+    ├── data_preprocessing.py
+    ├── explain.py
+    ├── feature_engineering.py
+    ├── predict.py
+    └── train_model.py
+
 ```
 
 ## ⚠️ Limitations
