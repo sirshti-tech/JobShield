@@ -8,6 +8,12 @@ Online job scams can expose job seekers to financial fraud and misuse of persona
 
 The application combines a trained machine-learning model with a simple warning-sign checklist to help users assess suspicious job advertisements.
 
+
+## 🖥️ Application Preview
+
+![JobShield AI Application](screenshots/jobshield-app.png)
+
+
 ## ✨ Features
 
 - Machine-learning-based fake job classification
