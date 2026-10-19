@@ -1,3 +1,4 @@
+
 # Virtual environment
 venv/
 
@@ -8,9 +9,10 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Environment variables
+# Environment variables and secrets
 .env
 .env.*
+.streamlit/secrets.toml
 
 # IDE
 .vscode/
@@ -20,12 +22,20 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Streamlit secrets
-.streamlit/secrets.toml
-
 # Temporary files
 *.tmp
 *.log
+
+# Local notebook backups
+notebooks/backup/
+notebooks/*backup*.ipynb
+notebooks/01_data_exploration.pre_cleanup_backup.ipynb
+
+# One-time cleanup helper
+cleanup_notebook.py
+
 # Keep trained models only in the root models folder
 notebooks/models/
+
+# Dataset may contain raw/private data
 data/raw/jobs.csv
